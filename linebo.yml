@@ -1,0 +1,22 @@
+name: linebo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6.8
+  - pip=19.1.1
+  - pip:
+    - ConfigSpace==0.4.6
+    - git+https://github.com/automl/HPOlib2.git
+    - git+https://github.com/befelix/SafeOpt.git
+    - numpy==1.17.3
+    - scipy
+    - matplotlib
+    - coloredlogs
+    - ruamel.yaml
+    - GPy
+    - PyYAML
+    - h5py
+    - celery
+    - noisyopt
+    - cma
+prefix: /home/Eric_Vader/.conda/envs/linebo

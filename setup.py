@@ -15,7 +15,7 @@ setup(name='febo',
       },
       zip_safe=False,
       install_requires=[
-          'numpy==1.14.3',
+          'numpy==1.17.3',
           'scipy',
           'matplotlib',
           'coloredlogs',
