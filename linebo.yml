@@ -2,22 +2,33 @@ name: linebo
 channels:
   - conda-forge
 dependencies:
-  - python=3.6.8
-  - pip=19.1.1
-  - cython
-  - conda-forge::numpy==1.17.3
+  - python==3.6.8
+  - pip==19.3.1
+  - conda-forge::git=2.23.0
+  - conda-forge::cython==0.29.14
+  - conda-forge::glib==2.58.3
+  - conda-forge::libblas=*=*mkl
+  - conda-forge::networkx==2.3
+  - conda-forge::matplotlib==2.2.3
+  - conda-forge::psutil==5.6.7
+  - conda-forge::h5py==2.9.0
+  - conda-forge::numpy==1.16.2
+  - conda-forge::scipy==1.2.1
+  - conda-forge::lpsolve55
+  - conda-forge::mlflow==1.4.0
+  - conda-forge::boto3==1.10.28
+  - conda-forge::gpy==1.9.9
   - pip:
+    - gpyopt==1.2.5
+    - disjoint-set==0.6.1
+    - pid==2.2.5
     - git+https://github.com/automl/HPOlib2.git
     - git+https://github.com/befelix/SafeOpt.git
-    - scipy
-    - matplotlib
+    - ConfigSpace==0.4.6
     - coloredlogs
     - ruamel.yaml
-    - GPy
     - PyYAML
-    - h5py
     - celery
     - noisyopt
     - cma
-    - ConfigSpace==0.4.6
 prefix: /home/Eric_Vader/.conda/envs/linebo
